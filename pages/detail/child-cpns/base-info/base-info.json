@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "xw-swiper": "/components/xw-swiper/xw-swiper",
+    "inline-flex": "../inline-flex/inline-flex"
+  }
+}

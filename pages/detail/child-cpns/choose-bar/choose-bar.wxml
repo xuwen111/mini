@@ -1,0 +1,51 @@
+<!--pages/detail/child-cpns/choose-bar/choose-bar.wxml-->
+<view class="choose-bar">
+  <view class="base-info">
+    <view class="image">
+      <image src="{{chooseBarData.colorImages[0].img}}"/>
+    </view>
+    <view class="center">
+      <view class="price">￥{{chooseBarData.price}}</view>
+      <view class="stock">库存：{{chooseBarData.totalStock}}件</view>
+      <view class="text" hidden="{{isChooseStyle}}" >选择 尺码，颜色分类</view>
+      <view class="text" hidden="{{!isChooseStyle}}">已选择 {{choosedStyle}}</view>
+    </view>
+  </view>
+  <view class="cancel-icon" bindtap="cancelChoose">
+    <image src="/assets/images/cancel.png" mode="widthFix" />
+  </view>
+
+  <scroll-view class="scroll-content"
+               scroll-y>
+    <!-- //1.尺码选择item -->
+    <view class="style-text">尺码</view>
+    <view class="size">
+      <block wx:for="{{chooseBarData.styleBar[1].list}}" wx:key="{{index}}">
+        <view class="size-item" bindtap="sizeChoose" data-size="{{item.name}}" >
+          <text style="{{item.name === choosedSize ? 'border-color: #fe4601': ''}}">{{item.name}}</text>
+        </view>
+      </block>
+    </view>
+    <!-- //2.颜色选择item -->
+    <view class="style-text">颜色分类</view> 
+    <view class="color">
+      <block wx:for="{{chooseBarData.styleBar[0].list}}" wx:key="{{index}}">
+        <view class="color-item" bindtap="colorChoose" data-size="{{item.name}}">
+          <text style="{{item.name === choosedColor ? 'border-color: #fe4601': ''}}">{{item.name}}</text>
+        </view>
+      </block>
+    </view>
+
+    <!-- //3.显示购买数量 -->
+    <view class="num-bar">
+      <view class="text">购买数量</view>
+      <view class="value-btns">
+        <view class="btn left" bindtap="submitCount">-</view>
+        <view class="value">{{count}}</view>
+        <view class="btn right" bindtap="addCount">+</view>
+      </view>
+    </view>
+  </scroll-view>
+
+  <view class="sure-btn" bindtap="handleSure">确 定</view>
+</view>

@@ -1,0 +1,6 @@
+<!--pages/home/child-cpns/recommend/recommend.wxml-->
+<view class="recommend">
+  <image src="/assets/images/home/preview.png" 
+         mode="widthFix" 
+         bindload="imagesLoad"/>
+</view>

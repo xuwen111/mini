@@ -1,0 +1,43 @@
+/* components/goods-list-item/goods-list-item.wxss */
+.goods-list-item image {
+  width: 100%;
+  border-radius: 20rpx;
+}
+.goods-list-item {
+  margin: 20rpx 10rpx 30rpx 10rpx;
+}
+.title {
+  margin: 5rpx;
+  font-size: 27rpx;
+  font-weight: 600;
+  color: #555;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.info {
+  display: flex;
+  align-items: center;
+}
+.info-content {
+  width: 88%;
+  display: flex;
+  align-items: center;
+}
+.price {
+  color: #fe4601;
+}
+.sales {
+  font-size: 26rpx;
+  color: #999;
+  margin: 6rpx 0 0 10rpx;
+}
+.more-icon {
+  flex: 1;
+}
+.more-icon image {
+  width: 85%;
+  margin-top: 20rpx;
+}

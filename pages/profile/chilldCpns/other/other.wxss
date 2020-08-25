@@ -1,0 +1,16 @@
+/* pages/profile/chilldCpns/other/other.wxss */
+.item {
+  display: flex;
+  align-items: center;
+  height: 80rpx;
+  border-bottom: solid 4rpx #eee;
+}
+.image {
+  margin-left: 20rpx;
+  margin-right: 30rpx;
+  width: 40rpx;
+  height: 40rpx;
+}
+.first {
+  border-bottom: solid 15rpx #eee;
+}

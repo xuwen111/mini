@@ -1,0 +1,28 @@
+<!--pages/detail/child-cpns/shop-info/shop-info.wxml-->
+<view class="shop-info">
+  <!-- 1.店铺基本信息 -->
+  <view class="shop-base-info">
+    <view class="logo">
+      <image src="{{shopInfo.shopLogo}}" mode="widthFix" />
+    </view>
+    <view class="shop-name">{{shopInfo.name}}</view>
+    <view class="all-gooods">全部宝贝</view>
+    <view class="in-shop">进店逛逛</view>
+  </view>
+
+  <!-- 2.店铺分数 -->
+  <view class="shop-score">
+    <block wx:for="{{shopInfo.score}}" wx:key="{{index}}">
+      <view class="item">
+        <view class="score-option">{{item.name}}</view>
+        <view class="score-value">{{item.score}}</view>
+        <view wx:if="{{item.isBetter}}" class="score-text">
+          <text>高</text>
+        </view>
+        <view wx:else class="score-text" style="background-color: #00ff00; color: #fff">
+          <text>低</text>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

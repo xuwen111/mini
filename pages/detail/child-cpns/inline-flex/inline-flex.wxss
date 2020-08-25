@@ -1,0 +1,26 @@
+/* pages/detail/child-cpns/inline-flex/inline-flex.wxss */
+.inline-flex {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 80rpx;
+  font-size: 26rpx;
+  color: #999;
+  border-bottom: solid 20rpx #f0f0f0;
+}
+.left {
+  width: 12%;
+  color: #555;
+  margin-left: 20rpx;
+}
+.center {
+  flex: 1;
+}
+.right {
+  width: 20%;
+}
+.right image {
+  width: 40%;
+  margin-top: 10rpx;
+  margin-left: 80rpx;
+}

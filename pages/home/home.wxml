@@ -1,0 +1,28 @@
+<!--pages/home/home.wxml-->
+<view class="home">
+  <!-- 0.搜索栏 -->
+  <search-bar />
+  <!-- 1.tab-control停留固定，切换商品展示 -->
+  <view hidden="{{!tabControlFixed}}">
+    <tab-control titles="{{titles}}" 
+                bind:itemClick="itemClick"
+                class="tab-control1" />
+  </view>
+  <scroll-view class="scroll-content"
+               scroll-y
+               scroll-top="{{topPosition}}"
+               scroll-with-animation
+               bindscroll="handleScroll"
+               bindscrolltolower="loadMore">
+    <!-- 2.轮播展示image -->
+    <xw-swiper swiperImages="{{swiperImages}}" bind:imagesLoad="imagesLoad"/>
+    <!-- 3.推荐信息 -->
+    <recommend />
+    <!-- 4.tab-control，切换商品展示 -->
+    <tab-control titles="{{titles}}" bind:itemClick="itemClick" class="tab-control2"/>
+    <!-- 5.首页商品展示列表 -->
+    <goods-list goodsList="{{goodsData[currentType]}}" />
+    <!-- 6."回到顶部" -->
+    <back-top class="back-top" wx:if="{{showBackTop}}" bindtap="toBackTop"/>
+  </scroll-view>
+</view>

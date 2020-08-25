@@ -1,0 +1,22 @@
+<!--pages/cart/childCpns/cart-item/cart-item.wxml-->
+<view class="content">
+  <view class="btn" bindtap="clickItem" data-index="{{index}}">
+    <view wx:if="{{cartItem.checked}}">
+      <image src="/assets/images/shopcart/choose.png"  mode="widthFix"/>
+    </view>
+    <view class="noChecked" wx:else></view>
+  </view>
+  <view class="image">
+    <image src="{{cartItem.image}}" mode="widthFix"/>
+  </view>
+  <view class="info">
+    <view class="title">{{cartItem.title}}</view>
+    <view class="price-count">
+      <text class="price">￥{{cartItem.price}}</text>
+      <button size="mini" bindtap="handleReduce"
+              data-item="{{cartItem}}">-</button>
+      <text class="count">{{cartItem.count}}</text>
+      <button class="addButton" size="mini" bindtap="handleAdd">+</button>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,26 @@
+<!--pages/profile/chilldCpns/other/other.wxml-->
+<view class="first">
+  <view class="item">
+    <image class="image" src="/assets/images/profile/mymessage.png" />
+    <text class="text">我的消息</text>
+  </view>
+  <view class="item">
+    <image class="image" src="/assets/images/profile/myscore.png" />
+    <text class="text">积分商城</text>
+  </view>
+  <view class="item">
+    <image class="image" src="/assets/images/profile/myvip.png"/>
+    <text class="text">会员卡</text>
+  </view>
+</view>
+
+<view class="second">
+  <view class="item">
+    <image class="image" src="/assets/images/profile/mycart.png" />
+    <text class="text">我的购物车</text>
+  </view>
+  <view class="item">
+    <image class="image" src="/assets/images/profile/myload.png" />
+    <text class="text">下载购物APP</text>
+  </view>
+</view>

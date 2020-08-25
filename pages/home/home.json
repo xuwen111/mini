@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "xw-swiper": "/components/xw-swiper/xw-swiper",
+    "search-bar": "./child-cpns/search-bar/search-bar",
+    "recommend": "/pages/home/child-cpns/recommend/recommend",
+    "tab-control": "/components/tab-control/tab-control",
+    "goods-list": "/components/goods-list/goods-list",
+    "back-top": "/components/back-top/back-top"
+  },
+  "navigationBarTitleText": "淘一下，美一下"
+}

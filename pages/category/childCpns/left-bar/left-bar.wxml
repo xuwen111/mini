@@ -1,0 +1,14 @@
+<!--pages/category/childCpns/left-bar/left-bar.wxml-->
+<view class="content">
+  <scroll-view class="s-content"
+               scroll-y
+               scroll-with-animation>
+    <block wx:for="{{categories}}" wx:key="index">
+    <view class="item {{currentIndex===index ? 'active' : ''}}" 
+          bindtap="handleClickItem"
+          data-index="{{index}}">
+      {{item.title}}
+    </view>
+    </block>
+  </scroll-view>
+</view>

@@ -1,0 +1,19 @@
+/* pages/category/category.wxss */
+.category {
+  height: 100vh;
+}
+.s-content {
+  height: 100%;
+}
+.content {
+  display: flex;
+  align-items: center;
+}
+.content .left-bar {
+  width: 25%;
+  background-color: #eee;
+}
+.content .info {
+  flex: 1;
+}
+

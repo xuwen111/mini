@@ -1,0 +1,130 @@
+/* pages/detail/child-cpns/choose-bar/choose-bar.wxss */
+.choose-bar{
+  width: 100vw;
+  height: 900rpx;
+  background-color: #ffffff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  border-top-left-radius: 10rpx;
+  border-top-right-radius: 10rpx;
+  z-index: 29;
+}
+.choose-bar image {
+  width: 200rpx;
+  height: 260rpx;
+  border-radius: 10rpx;
+}
+.base-info {
+  height: 300rpx;
+  display: flex;
+  align-items: center;
+  
+}
+.image {
+  margin: 0 20rpx;
+}
+.center {
+  margin: 0 20rpx;
+}
+.price {
+  font-size: 40rpx;
+  color: #fe4601;
+}
+.stock {
+  font-size: 26rpx;
+  color: #999;
+  margin: 20rpx 0;
+}
+.text {
+  font-size: 26rpx;
+}
+.cancel-icon {
+  width: 46rpx;
+  position: fixed;
+  bottom: 820rpx;
+  right: 20rpx;
+}
+.cancel-icon image {
+  width: 100%;
+}
+
+.scroll-content {
+  height: calc(100% - 300rpx - 80rpx);
+}
+.style-text {
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+}
+.size, 
+.color {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 20rpx 0;
+  margin: 0 20rpx;
+  border-bottom: solid 2rpx #ddd;
+}
+.size .size-item text,
+.color .color-item text {
+  padding: 10rpx 40rpx;
+  /* height: 50rpx; */
+  background-color: #f0f0f0;
+  border-radius: 10rpx;
+  font-size: 26rpx;
+  margin-right: 20rpx;
+  border: solid 3rpx #f0f0f0; 
+}
+.size-item,
+.color-item {
+  margin: 15rpx 0;
+}
+.num-bar {
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  margin-right: 20rpx;
+  border-bottom: solid 2rpx #ddd;
+  margin-bottom: 20rpx;
+}
+.num-bar .text {
+  margin-left: 20rpx;
+  width: 68%;
+  font-size: 30rpx;
+}
+.value-btns view {
+  display: inline-block;
+  text-align: center;
+  font-size: 26rpx;
+  width: 60rpx;
+  height: 45rpx;
+  line-height: 45rpx;
+  background-color: #f0f0f0;
+  margin-left: 5rpx;
+}
+.btn {
+  color: #888;
+}
+.value-btns .left {
+  border-top-left-radius: 10rpx;
+  border-bottom-left-radius: 10rpx;
+}
+.value-btns .right {
+  border-top-right-radius: 10rpx;
+  border-bottom-right-radius: 10rpx;
+}
+
+.sure-btn {
+  width: 100vw;
+  height: 80rpx;
+  line-height: 80rpx;
+  background-color: #fe4601;
+  color: #ffffff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  font-size: 30rpx;
+  border-radius: 50rpx;
+}

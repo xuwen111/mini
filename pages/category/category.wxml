@@ -1,0 +1,18 @@
+<!--pages/category/category.wxml-->
+<view class="category">
+  <scroll-view class="s-content"
+              scroll-y="true"
+              bindscrolltolower="loadMore"
+              scroll-with-animation="true"
+              scroll-top="{{topPosition}}"
+              bindscroll="scrollPosition">
+    <view class="content">
+      <!-- 1.商品分类边栏 -->
+      <left-bar class="left-bar" 
+                categories="{{categories}}" 
+                bind:handleClickItem="handleClickItem" />
+      <!-- 2.item的进一步细化分类 -->
+      <item-info class="info" subCategories="{{subCategories}}" />
+    </view>
+  </scroll-view>  
+</view>

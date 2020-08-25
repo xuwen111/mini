@@ -1,0 +1,7 @@
+/* components/xw-swiper/xw-swiper.wxss */
+.swiper {
+  text-align: center;
+}
+.swiper image {
+  width: 100%;
+}

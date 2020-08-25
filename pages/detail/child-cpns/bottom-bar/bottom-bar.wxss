@@ -1,0 +1,43 @@
+/* pages/detail/child-cpns/bottom-bar/bottom-bar.wxss */
+.bottom-bar {
+  height: 98rpx;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 24rpx;
+  color: #888;
+  box-shadow: 0 -2rpx 0 1rpx rgba(0, 0, 0, 0.06);
+}
+.bottom-bar image {
+  width: 45rpx;
+}
+.shop,
+.service,
+.fav {
+  width: 12%;
+}
+.shop {
+  color: #fe4601;
+}
+.add-cart,
+.buy-it {
+  width: 30%;
+  color: #ffffff;
+  font-size: 28rpx;
+  padding: 20rpx 10rpx;
+}
+.add-cart {
+  background-color: #ffc500;
+  border-top-left-radius: 35rpx;
+  border-bottom-left-radius: 35rpx;
+  margin-left: 15rpx;
+}
+.buy-it {
+  background-color: #fe560a;
+  border-top-right-radius: 35rpx;
+  border-bottom-right-radius: 35rpx;
+  margin-right: 20rpx;
+}
+.text-colorful {
+  color: #fe4601;
+}

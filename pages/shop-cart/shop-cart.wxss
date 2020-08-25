@@ -1,0 +1,7 @@
+/* pages/shop-cart/shop-cart.wxss */
+.shop-cart {
+  height: 100vh;
+}
+.scroll-view {
+  height: calc(100% - 90rpx);
+}

@@ -1,0 +1,44 @@
+/* pages/profile/chilldCpns/login/login.wxss */
+.content {
+  display: flex;
+  align-items: center;
+  height: 250rpx;
+  background-color: #fe4601;
+  border-top: solid 2rpx rgba(255,0,0,0.1);
+  color: #fff;
+}
+.userHead {
+  margin-left: 25rpx;
+  margin-right: 40rpx;
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+  border: solid 2rpx #fff;
+}
+.userHead image {
+  width: 100%;
+  border-radius: 50%;
+}
+.login-info {
+  width: 60%;
+}
+.login {
+  margin-bottom: 10rpx;
+  font-size: 36rpx;
+}
+.phone {
+  display: flex;
+  align-items: center;
+}
+.phone image {
+  width: 10%;
+}
+.phone-text {
+  font-size: 28rpx;
+  color: #fff;
+}
+.go {
+  flex: 1;
+  font-size: 60rpx;
+  font-weight: 700;
+}

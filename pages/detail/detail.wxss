@@ -1,0 +1,15 @@
+/* pages/detail/detail.wxss */
+.detail {
+  height: 100vh;
+}
+.scroll {
+  height: calc(100% - 98rpx);
+  overflow: hidden;
+}
+.tab-control {
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 19;
+}

@@ -1,0 +1,42 @@
+<!--pages/detail/child-cpns/parmas-info/parmas-info.wxml-->
+<view class="params-info">
+  <view class="desc">
+    ——————宝贝详情——————
+  </view>
+  <!-- 1.产品参数 -->
+  <view class="product-info">
+    <view class="desc-text">----{{paramsInfo.productInfo.key}}----</view>
+    <block wx:for="{{paramsInfo.productInfo.set}}" wx:key="{{index}}">
+      <view class="product-item">
+        <view class="key">{{item.key}}</view>
+        <view class="value">{{item.value}}</view>
+      </view>
+    </block>
+  </view>
+  <!-- 2.尺码参数 -->
+  <view class="size-info">
+    <view class="desc-text">----{{paramsInfo.sizeInfo.key}}----</view>
+    <block wx:for="{{paramsInfo.sizeInfo.tables}}" wx:key="{{index}}">
+      <view class="size-item">
+        <block wx:for="{{item}}" wx:key="{{index}}">
+          <view class="item">
+            <block wx:for="{{item}}" wx:key="{{index}}">
+              <view class="cell">{{item}}</view>
+            </block>
+          </view>
+        </block>
+      </view>
+    </block>
+    <view class="disclaimer">{{paramsInfo.sizeInfo.disclaimer}}</view>
+  </view>
+
+  <!-- 3.商品详情images -->
+  <view class="detail-images">
+    <block wx:for="{{paramsInfo.detailImages}}" wx:key="{{index}}">
+      <view class="image-desc">----{{item.key}}----</view>
+      <block wx:for="{{item.list}}" wx:key="{{index}}">
+        <image src="{{item}}" mode="widthFix" />
+      </block>
+    </block>
+  </view>
+</view>

@@ -1,0 +1,20 @@
+<!--pages/home/child-cpns/search-bar/search-bar.wxml-->
+<view class="search-bar">
+  <view class="left">
+    <image src="/assets/images/home/to_scan.png" mode="widthFix" />
+    <view class="text">扫一扫</view>
+  </view>
+  <view class="center">
+    我是搜索栏
+  </view>
+  <view class="right">
+    <view class="red-pockey">
+      <image src="/assets/images/home/red_packet.png" mode="widthFix"/>
+      <view class="text">领红包</view>
+    </view>
+    <view class="member-code">
+      <image src="/assets/images/home/member_code.png" mode="widthFix"/>
+      <view class="text">会员码</view>
+    </view>
+  </view>
+</view>

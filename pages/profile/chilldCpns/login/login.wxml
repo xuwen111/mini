@@ -1,0 +1,17 @@
+<!--pages/profile/chilldCpns/login/login.wxml-->
+<view class="content">
+  <!-- 1.用户头像 -->
+  <view class="userHead">
+    <image src="/assets/images/profile/defaultportrait.png" mode="widthFix"/>
+  </view>
+  <!-- 2.显示是否登录 -->
+  <view class="login-info">
+    <view class="login">登录 / 注册</view>
+    <view class="phone">
+      <image src="/assets/images/profile/phone.png" mode="widthFix"/>
+      <text class="phone-text">暂无绑定手机号</text>
+    </view>
+  </view>
+  <!-- 3.箭头、去登录 -->
+  <view class="go"> > </view>
+</view>

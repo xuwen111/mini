@@ -1,0 +1,9 @@
+<!--pages/profile/profile.wxml-->
+<view class="profile">
+  <!-- 1.用户登录信息 -->
+  <login />
+  <!-- 2.个人账户信息 -->
+  <my-account />
+  <!-- 3.其他信息 -->
+  <other />
+</view>

@@ -1,0 +1,51 @@
+/* pages/cart/childCpns/bottom-bar/bottom-bar.wxss */
+.content {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 90rpx;
+  background-color:#ffffff;
+  border-top: solid 2rpx #888;
+}
+.image-outer {
+  width: 40rpx;
+  height: 40rpx;
+  display: inline-block;
+  margin-left: 20rpx;
+  margin-right: 5rpx;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.image {
+  width: 100%;
+  height: 100%;
+}
+.noChecked {
+  width: 32rpx;
+  height: 32rpx;
+  border: solid 4rpx #bbb;
+  border-radius: 50%;
+}
+.text {
+  width: 60px;
+  margin-left: 10rpx;
+}
+.total {
+  width: 240rpx;
+  margin-left: 60rpx;
+  margin-right: 60rpx;
+  color: #fe4601;
+}
+.toBuy {
+  width: 120px;
+  display: inline-block;
+  background-color: #fe4601;
+  color: #fff;
+  padding: 15rpx 0;
+  border-radius: 30rpx;
+  text-align: center;
+  margin-right: 20rpx;
+}

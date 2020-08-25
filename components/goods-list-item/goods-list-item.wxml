@@ -1,0 +1,17 @@
+<!--components/goods-list-item/goods-list-item.wxml-->
+<!-- 导入wxs文件使用numberFormat -->
+<wxs src="../../wxs/format.wxs" module="format" />
+
+<view class="goods-list-item" bindtap="goodsItemClick">
+  <image src="{{itemInfo.show.img || itemInfo.image}}" mode="widthFix"></image>
+  <view class="title">{{itemInfo.title}}</view>
+  <view class="info">
+    <view class="info-content">
+      <view class="price">￥{{itemInfo.price}}</view>
+      <view class="sales">{{format.numberFormat(itemInfo.sale || itemInfo.itemSale)}}人付款</view>
+    </view>
+    <view class="more-icon">
+      <image src="/assets/images/more.png" mode="widthFix" />
+    </view>
+  </view>
+</view>

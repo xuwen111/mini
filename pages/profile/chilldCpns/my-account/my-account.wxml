@@ -1,0 +1,17 @@
+<!--pages/profile/chilldCpns/my-account/my-account.wxml-->
+<wxs src="../../../../wxs/format.wxs" module="format"/>
+
+<view class="content">
+  <view class="money">
+    <text>{{format.priceFormat(money, 2)}} </text>元
+    <view class="text">我的余额</view>
+  </view>
+  <view class="coupon">
+    <text>{{coupons}} </text>个
+    <view class="text">我的优惠券</view>
+  </view>
+  <view class="score">
+    <text>{{score}} </text>分
+    <view class="text">我的积分</view>
+  </view>
+</view>

@@ -1,0 +1,31 @@
+<!--pages/detail/detail.wxml-->
+<view class="detail">
+  <scroll-view scroll-y 
+               class="scroll"
+               scroll-top="{{topPosition}}"
+               scroll-with-animation
+               bindscroll="handleScroll">
+    <!-- 0.详情页tab-control -->
+    <tab-control titles="{{titles}}" class="tab-control"/>
+    <!-- 1.商品基础信息 -->
+    <base-info baseInfo="{{baseInfo}}"/>
+    <!-- 2.评论信息 -->
+    <comment-info detailCommentInfo="{{detailCommentInfo}}" />
+    <!-- 3.店铺信息 -->
+    <shop-info shopInfo="{{shopInfo}}" />
+    <!-- 4.商品参数信息 -->
+    <parmas-info paramsInfo="{{paramsInfo}}" />
+    <!-- 5.推荐信息 -->
+    <recommend recommendData="{{recommendData}}"/>
+    <!-- 6.“回到顶部” -->
+    <back-top wx:if="{{showBackTop}}" bindtap="toBackTop"/>
+  </scroll-view>
+  <!-- 底部栏--固定 -->
+  <bottom-bar bind:addCart="addCart" bind:buyIt="buyIt" />
+  <!-- choose-bar 选择样式-> 固定 -->
+  <view hidden="{{!isAdd}}">
+    <choose-bar chooseBarData="{{chooseBarData}}"
+                bind:handleSure="handleSure" 
+                bind:cancelChoose="cancelChoose"/>
+  </view>
+</view>

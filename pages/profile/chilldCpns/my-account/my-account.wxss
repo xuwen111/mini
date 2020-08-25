@@ -1,0 +1,27 @@
+/* pages/profile/chilldCpns/my-account/my-account.wxss */
+.content {
+  margin-top: 30rpx;
+  padding-bottom: 30rpx;
+  display: flex;
+  align-items: center;
+  font-size: 30rpx;
+  text-align: center;
+  border-bottom: solid 15rpx #eee;
+}
+.money,
+.coupon,
+.score {
+  flex: 1;
+}
+.money text,
+.coupon text,
+.score text{
+  color: #fe4601;
+}
+.text {
+  margin-top: 10rpx;
+}
+.money,
+.coupon{
+  border-right: solid 4rpx #ddd;
+}

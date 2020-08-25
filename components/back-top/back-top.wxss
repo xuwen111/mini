@@ -1,0 +1,15 @@
+/* components/back-top/back-top.wxss */
+.back-top {
+  position: fixed;
+  bottom: 120rpx;
+  right: 25rpx;
+  z-index: 19;
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  border: solid 4rpx #cccccc;
+  background-color: #f0f0f0;
+}
+.back-top image {
+  width: 100%;
+}

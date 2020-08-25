@@ -1,0 +1,68 @@
+/* pages/detail/child-cpns/comment-info/comment-info.wxss */
+.comment-info {
+  margin-top: 15rpx;
+  width: 100vw;
+  border-bottom: solid 20rpx #f0f0f0;
+}
+.comment-top {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10rpx;
+}
+.text-num {
+  width: 70%;
+  margin-left: 20rpx;
+  font-size: 30rpx;
+}
+.more-text {
+  width: 18%;
+  font-size: 28rpx;
+  color: #fe4601;
+  text-align: right;
+}
+.icon {
+  flex: 1;
+}
+.icon image {
+  width: 80%;
+  margin-top: 10rpx;
+}
+
+.user-info {
+  display: flex;
+  align-items: center ;
+  margin-top: 15rpx;
+}
+.avatar {
+  margin-left: 20rpx;
+  width: 10%;
+}
+.avatar image {
+  width: 100%;
+  border-radius: 50%;
+}
+.username {
+  flex: 1;
+  margin-left: 12rpx;
+  color: #777;
+  font-size: 28rpx;
+}
+
+.comment {
+  width: 100%;
+  margin-left: 20rpx;
+}
+.time-style {
+  display: flex;
+  font-size: 26rpx;
+  color: #999;
+  margin: 10rpx 0 15rpx 0;
+}
+.time {
+  margin-right: 20rpx;
+}
+.content {
+  font-size: 28rpx;
+  margin-right: 30rpx;
+  padding-bottom: 30rpx;
+}

@@ -1,0 +1,5 @@
+<!--pages/detail/child-cpns/recommend/recommend.wxml-->
+<view class="recommend">
+  <view class="desc">————看了又看————</view>
+  <goods-list goodsList="{{recommendData}}" />
+</view>

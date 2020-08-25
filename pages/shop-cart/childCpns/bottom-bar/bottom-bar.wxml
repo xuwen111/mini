@@ -1,0 +1,14 @@
+<!--pages/cart/childCpns/bottom-bar/bottom-bar.wxml-->
+<wxs src="../../../../wxs/format.wxs" module="format" />
+
+<view class="content">
+    <view class="image-outer" bindtap="handleClickAll">
+      <image class="image" wx:if="{{selectAll}}" src="/assets/images/shopcart/choose.png"/>
+      <view class="noChecked" wx:else></view>
+    </view>
+    <text class="text">全选</text>
+  <text class="total">合计:￥{{format.priceFormat(totalPrice, 2)}}</text>
+  <view class="toBuy">
+    结算({{totalCount}})
+  </view>  
+</view>

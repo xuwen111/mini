@@ -1,0 +1,29 @@
+<!--pages/detail/child-cpns/comment-info/comment-info.wxml-->
+<!-- 导入wxs文件的dateFormat -->
+<wxs src="../../../../wxs/format.wxs" module="format" />
+
+
+<view class="comment-info">
+  <view class="comment-top">
+    <view class="text-num">宝贝评价({{detailCommentInfo.commentTotal}})</view>
+    <view class="more-text">查看全部</view>
+    <view class="icon"><image src="/assets/images/detail/right_colorful.png" mode="widthFix"/></view>
+  </view>
+  <block wx:for="{{detailCommentInfo.commentList}}" wx:key="{{index}}">
+    <!-- 1.评价用户信息 -->
+    <view class="user-info">
+      <view class="avatar">
+        <image src="{{item.user.avatar}}" mode="widthFix"></image>
+      </view>
+      <view class="username">{{item.user.uname}}</view>
+    </view>
+    <!-- 2.评价内容 -->
+    <view class="comment">
+      <view class="time-style">
+        <view class="time">{{format.dateFormat(item.created, 'yyyy-MM-dd')}}</view>
+        <view class="style">{{item.style}}</view>
+      </view>
+      <view class="content">{{item.content}}</view>
+    </view>
+  </block>
+</view>

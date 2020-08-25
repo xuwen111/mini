@@ -1,0 +1,8 @@
+/* pages/home/child-cpns/recommend/recommend.wxss */
+.recommend {
+  margin: 2px 6px 10px 6px;
+  border-bottom: solid 1.5px #f3f3f3;
+}
+.recommend image {
+  width: 100%;
+}

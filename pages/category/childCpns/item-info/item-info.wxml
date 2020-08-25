@@ -1,0 +1,16 @@
+<!--pages/category/childCpns/item-info/item-info.wxml-->
+<view class="content">
+  <view class="desc">猜你喜欢</view>
+  <scroll-view class="s-content"
+               scroll-y
+               scroll-with-animation>
+    <view class="info">
+      <block wx:for="{{subCategories}}" wx:key="index">
+        <view class="item">
+          <image src="{{item.image}}" mode="widthFix" />
+          <view class="title">{{item.title}}</view>
+        </view>
+      </block>
+    </view>
+  </scroll-view>
+</view>

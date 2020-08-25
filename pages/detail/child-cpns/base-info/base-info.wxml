@@ -1,0 +1,32 @@
+<!--pages/detail/child-cpns/base-info/base-info.wxml-->
+<view class="base-info">
+    <!-- 1.商品轮播展示图 -->
+    <xw-swiper class="swiper" swiperImages="{{baseInfo.topImages}}" />
+    <!-- 2.商品价格信息 -->
+    <view class="desc">专属优惠</view>
+    <view class="price-info">
+      <view class="price">{{baseInfo.price}}</view>
+      <view class="old-price">￥{{baseInfo.oldPrice}}</view>
+    </view>
+      <view style="background-color: {{baseInfo.discountBgColor}}" class="discount">
+        {{baseInfo.discount}}
+      </view>
+    <!-- 3.商品标题 -->
+    <view class="title">{{baseInfo.title}}</view>
+    <!-- 4.服务信息 -->
+    <inline-flex>
+      <view slot="left">发货</view>
+      <view slot="center">{{baseInfo.diliveryInfo}}</view>
+      <view slot="right" class="sales">{{baseInfo.sales}}</view>
+    </inline-flex>
+    <inline-flex>
+      <view slot="left">保障</view>
+      <view slot="center">{{baseInfo.serviceInfo}}</view>
+      <image src="/assets/images/detail/right.png" mode="widthFix" slot="right" />
+    </inline-flex>
+    <inline-flex>
+      <view slot="left">选择</view>
+      <view slot="center">选择 尺码、颜色</view>
+      <image src="/assets/images/detail/right.png" mode="widthFix" slot="right" />
+    </inline-flex>
+</view>

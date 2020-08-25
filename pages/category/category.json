@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "left-bar": "./childCpns/left-bar/left-bar",
+    "item-info": "./childCpns/item-info/item-info"
+  },
+  "navigationBarTitleText": "商品分类"
+}

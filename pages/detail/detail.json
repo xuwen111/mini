@@ -1,0 +1,14 @@
+{
+  "usingComponents": {
+    "tab-control": "/components/tab-control/tab-control",
+    "base-info": "./child-cpns/base-info/base-info",
+    "comment-info": "./child-cpns/comment-info/comment-info",
+    "bottom-bar": "./child-cpns/bottom-bar/bottom-bar",
+    "shop-info": "./child-cpns/shop-info/shop-info",
+    "parmas-info": "./child-cpns/parmas-info/parmas-info",
+    "recommend": "./child-cpns/recommend/recommend",
+    "back-top": "/components/back-top/back-top",
+    "choose-bar": "./child-cpns/choose-bar/choose-bar"
+  },
+  "navigationBarTitleText": "商品详情页"
+}

@@ -1,0 +1,10 @@
+/* pages/detail/child-cpns/recommend/recommend.wxss */
+.recommend {
+  width: 100vw;
+}
+.desc {
+  padding: 20rpx 0 30rpx 0;
+  text-align: center;
+  background-color: #f0f0f0;
+  color: #888;
+}

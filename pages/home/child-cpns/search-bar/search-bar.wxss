@@ -1,0 +1,33 @@
+/* pages/home/child-cpns/search-bar/search-bar.wxss */
+.search-bar {
+  height: 100rpx;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  background-color: #fe4601;
+  text-align: center ;
+  z-index: 19;
+  /* position: fixed;
+  top: 0;
+  left: 0; */
+}
+.search-bar image {
+  width: 40rpx;
+}
+.left {
+  margin: 0 20rpx;
+}
+.center {
+  width: 60%;
+}
+.right {
+  display: flex;
+  align-items: center;
+}
+.text {
+  font-size: 24rpx;
+  color: #ffffff;
+}
+.member-code {
+  margin: 0 20rpx;
+}

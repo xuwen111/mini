@@ -1,0 +1,57 @@
+/* pages/detail/child-cpns/shop-info/shop-info.wxss */
+.shop-info {
+  margin-top: 30rpx;
+  padding-bottom: 30rpx;
+}
+.shop-base-info {
+  display: flex;
+  align-items: center;
+  margin: 0 20rpx;
+}
+.logo {
+  width: 15%;
+}
+.logo image {
+  width: 80%;
+}
+.shop-name {
+  margin-right: 70rpx;
+  color: #777;
+}
+.all-gooods, .in-shop {
+  margin: 0 15rpx;
+  font-size: 26rpx;
+  border-radius: 15rpx;
+  padding: 8rpx 20rpx;
+}
+.all-gooods {
+  border: solid 2rpx #fe4601;
+  color: #fe4601;
+}
+.in-shop {
+  background-color: #fe4601;
+  color: #fff;
+}
+
+.shop-score {
+  margin: 10rpx 20rpx;
+  display: flex;
+  align-items: center;
+  color: #999;
+  font-size: 26rpx;
+}
+.item {
+  margin-right: 30rpx;
+  display: flex;
+}
+.score-option, .score-value, .score-text {
+  margin-right: 8rpx;
+}
+.score-option, .score-value {
+  margin-top: 4rpx;
+}
+.score-text {
+  padding: 4rpx 6rpx;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+}

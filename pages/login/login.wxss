@@ -1,0 +1,15 @@
+/* pages/login/login.wxss */
+.container {
+  width: 100vw;
+  height: 600rpx;
+  margin-top: 100rpx;
+  display: flex;
+  flex-direction: column;
+}
+.flex-item {
+  flex: 1;
+  margin-bottom: 20rpx;
+}
+.flex-item input {
+  border-bottom: solid 2rpx pink;
+}

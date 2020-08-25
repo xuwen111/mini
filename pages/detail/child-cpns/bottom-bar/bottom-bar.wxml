@@ -1,0 +1,31 @@
+<!--pages/detail/child-cpns/bottom-bar/bottom-bar.wxml-->
+<view class="bottom-bar">
+  <view class="shop">
+    <image src="/assets/images/detail/tabbar/shop_active.png" mode="widthFix" />
+    <view class="text">店铺</view>
+  </view>
+
+  <view class="service">
+    <image src="/assets/images/detail/tabbar/server.png" mode="widthFix" />
+    <view class="text">客服</view>
+  </view>
+
+  <view class="fav" bindtap="handleLikeIt">
+    <view class="fav-icon" wx:if="{{isLike}}">
+      <image src="/assets/images/detail/tabbar/collect_active.png" mode="widthFix" />
+      <view class="text-colorful">收藏</view>
+    </view>
+    <view class="fav-icon" wx:else>
+      <image src="/assets/images/detail/tabbar/collect.png" mode="widthFix" />
+      <view class="text">收藏</view>
+    </view>
+  </view>
+
+  <view class="add-cart" bindtap="addCart">
+    <text>加入购物车</text>
+  </view>
+
+  <view class="buy-it" bindtap="buyIt">
+    <text>立即购买</text>
+  </view>
+</view> 

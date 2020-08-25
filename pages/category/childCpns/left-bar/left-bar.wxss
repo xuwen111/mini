@@ -1,0 +1,18 @@
+/* pages/category/childCpns/left-bar/left-bar.wxss */
+.s-content {
+  height: 100vh;
+  background-color: #fff;
+}
+.item {
+  text-align: center;
+  padding: 25rpx 0;
+  color: #888;
+  border-left: solid 10rpx #fff;
+  border-right: solid 15rpx #eee;
+}
+.active {
+  color: #fe4601;
+  font-weight: 700;
+  border-left: solid 10rpx #fe4601;
+  background-color: #eee;
+}

@@ -1,0 +1,23 @@
+<!--pages/login/login.wxml-->
+<form bindsubmit="handleSubmit">
+  <view class="container">
+    <view class="flex-item">
+      <input name="account" placeholder="请输入用户名" style="width: 80vw" />
+    </view>
+    <view class="flex-item">
+      <input name="password" placeholder="请输入密码" style="width: 80vw" />
+    </view>
+    <view class="flex-item">
+      <button type="primary" form-type="submit" id="login"
+              style="width: 80vw">
+        登录
+      </button>
+    </view>
+    <view class="flex-item">
+      <button form-type="submit" id="register" style="width: 80vw"> 
+        注册
+      </button>
+    </view>
+  </view>
+</form>
+

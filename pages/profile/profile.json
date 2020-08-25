@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "login": "./chilldCpns/login/login",
+    "my-account": "./chilldCpns/my-account/my-account",
+    "other": "./chilldCpns/other/other"
+  },
+  "navigationBarTitleText": "我的信息"
+}
